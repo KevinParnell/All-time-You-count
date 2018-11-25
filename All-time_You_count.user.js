@@ -4,7 +4,7 @@
 // @description All-time (You) count
 // @include     http*://boards.4chan.org/*
 // @exclude     http*://boards.4chan.org/*/catalog
-// @version     1.0
+// @version     1.1
 // @match *://boards.4chan.org/*
 // @match *://boards.4channel.org/*
 // @grant       GM_getValue
