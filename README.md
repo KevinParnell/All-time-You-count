@@ -17,4 +17,4 @@ I recommend using this with [4chanx](https://github.com/ccd0/4chan-x) and [OneeC
 # Result show
 Shown with 4chanx and OneeChan.
 
-![image](https://raw.githubusercontent.com/KevinParnell/All-time-You-count/img/you_count.png)
+![image](https://raw.githubusercontent.com/KevinParnell/All-time-You-count/img/you_count)
