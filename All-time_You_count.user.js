@@ -4,14 +4,97 @@
 // @description All-time (You) count
 // @include     http*://boards.4chan.org/*
 // @exclude     http*://boards.4chan.org/*/catalog
-// @version     0.1
-// @grant       GM_getValue
-// @grant       GM_setValue
-// @grant       GM_listValues
-// @grant       GM_deleteValue
+// @version     1.0
+// @include      http://boards.4chan.org/*
+// @include      https://boards.4chan.org/*
+// @include      http://sys.4chan.org/*
+// @include      https://sys.4chan.org/*
+// @include      http://www.4chan.org/*
+// @include      https://www.4chan.org/*
+// @include      http://boards.4channel.org/*
+// @include      https://boards.4channel.org/*
+// @include      http://sys.4channel.org/*
+// @include      https://sys.4channel.org/*
+// @include      http://www.4channel.org/*
+// @include      https://www.4channel.org/*
+// @include      http://i.4cdn.org/*
+// @include      https://i.4cdn.org/*
+// @include      http://is.4chan.org/*
+// @include      https://is.4chan.org/*
+// @include      http://is2.4chan.org/*
+// @include      https://is2.4chan.org/*
+// @include      http://is.4channel.org/*
+// @include      https://is.4channel.org/*
+// @include      http://is2.4channel.org/*
+// @include      https://is2.4channel.org/*
+// @include      https://www.google.com/recaptcha/api2/anchor?k=6Ldp2bsSAAAAAAJ5uyx_lx34lJeEpTLVkP5k04qc*
+// @include      https://www.google.com/recaptcha/api2/frame?*&k=6Ldp2bsSAAAAAAJ5uyx_lx34lJeEpTLVkP5k04qc*
+// @include      https://www.google.com/recaptcha/api2/frame?*&k=887877714&*
+// @include      https://www.google.com/recaptcha/api2/bframe?*&k=6Ldp2bsSAAAAAAJ5uyx_lx34lJeEpTLVkP5k04qc*
+// @include      http://www.google.com/recaptcha/api/fallback?k=6Ldp2bsSAAAAAAJ5uyx_lx34lJeEpTLVkP5k04qc*
+// @include      https://www.google.com/recaptcha/api/fallback?k=6Ldp2bsSAAAAAAJ5uyx_lx34lJeEpTLVkP5k04qc*
+// @exclude      http://www.4chan.org/pass
+// @exclude      https://www.4chan.org/pass
+// @exclude      http://www.4chan.org/pass?*
+// @exclude      https://www.4chan.org/pass?*
+// @exclude      http://www.4chan.org/advertise
+// @exclude      https://www.4chan.org/advertise
+// @exclude      http://www.4chan.org/advertise?*
+// @exclude      https://www.4chan.org/advertise?*
+// @exclude      http://www.4chan.org/donate
+// @exclude      https://www.4chan.org/donate
+// @exclude      http://www.4chan.org/donate?*
+// @exclude      https://www.4chan.org/donate?*
+// @exclude      http://www.4channel.org/pass
+// @exclude      https://www.4channel.org/pass
+// @exclude      http://www.4channel.org/pass?*
+// @exclude      https://www.4channel.org/pass?*
+// @exclude      http://www.4channel.org/advertise
+// @exclude      https://www.4channel.org/advertise
+// @exclude      http://www.4channel.org/advertise?*
+// @exclude      https://www.4channel.org/advertise?*
+// @exclude      http://www.4channel.org/donate
+// @exclude      https://www.4channel.org/donate
+// @exclude      http://www.4channel.org/donate?*
+// @exclude      https://www.4channel.org/donate?*
+// @connect      4chan.org
+// @connect      4channel.org
+// @connect      4cdn.org
+// @connect      mayhemydg.github.io
+// @connect      archive.4plebs.org
+// @connect      archive.nyafuu.org
+// @connect      archive.rebeccablacktech.com
+// @connect      warosu.org
+// @connect      desuarchive.org
+// @connect      boards.fireden.net
+// @connect      arch.b4k.co
+// @connect      archive.b-stats.org
+// @connect      archived.moe
+// @connect      thebarchive.com
+// @connect      archiveofsins.com
+// @connect      api.clyp.it
+// @connect      api.dailymotion.com
+// @connect      api.github.com
+// @connect      soundcloud.com
+// @connect      vimeo.com
+// @connect      www.googleapis.com
+// @connect      *
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_deleteValue
+// @grant        GM_listValues
+// @grant        GM_addValueChangeListener
+// @grant        GM_openInTab
+// @grant        GM_xmlhttpRequest
+// @grant        GM.getValue
+// @grant        GM.setValue
+// @grant        GM.deleteValue
+// @grant        GM.listValues
+// @grant        GM.openInTab
+// @grant        GM.xmlHttpRequest
 // @run-at      document-end
-// @updateURL   https://github.com/WhatIsThisImNotGoodWithComputers/All-time-You-count/raw/master/All-time_You_count.user.js
-// @downloadURL https://github.com/WhatIsThisImNotGoodWithComputers/All-time-You-count/raw/master/All-time_You_count.user.js
+// @updateURL   https://github.com/KevinParnell/All-time-You-count/raw/master/All-time_You_count.user.js
+// @downloadURL https://github.com/KevinParnell/All-time-You-count/raw/master/All-time_You_count.user.js
 // ==/UserScript==
 
 /** JSLint excludes */
@@ -142,7 +225,7 @@ function init() {
     var countSpan = document.createElement("SPAN");
     countSpan.setAttribute("id", "yous-count");
 
-    textSpan.textContent = "All-time (You) count: ";
+    textSpan.textContent = "Current (You) count: ";
     countSpan.textContent = allTimeYouCount;
 
     span.appendChild(textSpan);
@@ -199,3 +282,4 @@ function cleanUp() {
 /** start first calls */
 setTimeout(init, 2500);
 setTimeout(parseOriginalPosts, 5000);
+
