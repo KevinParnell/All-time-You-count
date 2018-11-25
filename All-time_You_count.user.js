@@ -12,7 +12,7 @@
 // @grant       GM_listValues
 // @grant       GM_deleteValue
 // @run-at      document-end
-// @updateURL   https://github.com/KevinParnell/All-time-You-count/raw/master/All-time_You_count.user.js
+// @updateURL   https://github.com/KevinParnell/All-time-You-count/raw/master/All-time_You_count.meta.js
 // @downloadURL https://github.com/KevinParnell/All-time-You-count/raw/master/All-time_You_count.user.js
 // ==/UserScript==
 
