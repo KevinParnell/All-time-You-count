@@ -1,4 +1,5 @@
 # All-time-You-count
+
 I really recommend you install 4chan x (and optionally use OneeChan with it), otherwise you might want to add some custom css.  
 If someone wants to style it up for the inline extension, feel free to fork or submit something.
 
@@ -15,6 +16,7 @@ I recommend using this with [4chanx](https://github.com/ccd0/4chan-x) and [OneeC
 2. Install the [All-time-You-count userscript](https://github.com/KevinParnell/All-time-You-count/raw/master/All-time_You_count.user.js)
 
 # Result show
+
 Shown with 4chanx and OneeChan.
 
 ![image](https://raw.githubusercontent.com/KevinParnell/All-time-You-count/master/img/you_count.png)
