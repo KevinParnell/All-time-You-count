@@ -2,7 +2,8 @@
 // @name        All-time (You) count
 // @namespace   com.KevinParnell.alltimeyoucount
 // @description All-time (You) count
-// @version     1.2
+// @author Kevin Parnell
+// @version     1.3
 // @match *://boards.4chan.org/*
 // @match *://boards.4channel.org/*
 // @grant       GM_getValue
